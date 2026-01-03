@@ -1,14 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Student-Teacher-Booking/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <script type="text/javascript">
-      var path = location.pathname;
-      sessionStorage.redirect = path;
-      location.replace('/Student-Teacher-Booking/');
+    <script type="text/javascript">
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
     </script>
 
     <title>student-teacher-booking-appointment</title>
