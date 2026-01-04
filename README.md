@@ -1,20 +1,94 @@
-# Student-Teacher-Booking
+# 🎓 Student–Teacher Booking Appointment System
 
-This project is built using React and Vite. Below are some details about the setup and tools used:
+A web-based application that allows students to book appointments with teachers easily, while admins manage approvals and teachers handle schedules and messages.
 
-## React + Vite
+This project is built to simplify communication and appointment management between students and teachers.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🌐 Live Demo  
+🔗 **Live URL:** https://parveen3108.github.io/Student-Teacher-Booking/  
+📂 **GitHub Repo:** https://github.com/Parveen3108/Student-Teacher-Booking
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👨‍🎓 Student
+- Student registration & login
+- Admin approval based access
+- Search teachers
+- Book appointments
 
-## Expanding the ESLint configuration
+### 👨‍🏫 Teacher
+- Secure login
+- View student appointments
+- Manage schedule
+- View student messages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛠️ Admin
+- Admin login
+- Approve / reject students
+- Add teachers
+- View all appointments
+- Manage messages
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|----------|--------|
+| React.js | Frontend UI |
+| React Router | Navigation |
+| Tailwind CSS | Styling |
+| Firebase Auth | Authentication |
+| Firebase Realtime DB | Database |
+| Vite | Build Tool |
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Parveen3108/Student-Teacher-Booking.git
+
+📁 Folder Structure
+src/
+ ┣ auth/
+ ┣ components/
+ ┣ pages/
+ ┣ firebase/
+ ┣ App.jsx
+ ┣ AppRoutes.jsx
+ ┗ main.jsx
+
+🔐 Authentication Roles
+
+Admin
+
+Student
+
+Teacher
+
+Role-based protected routing is implemented.
+
+🚀 Future Enhancements
+
+Email notifications
+
+Calendar integration
+
+Appointment cancellation
+
+Payment integration
+
+UI improvements
+
+👨‍💻 Author
+
+Parveen Solath
+📧 Email: parveensolath205@gmail.com
+
+💼 GitHub: https://github.com/Parveen3108
